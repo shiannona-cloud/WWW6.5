@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 //tell the solidity compiler to import the code from file day9_scientificCaculator.sol. And this file need to be in the same folder as this contract.
 //tell this contract to the "menu" of the scientificCaculator contract, so we can use its functions.
 //such like when you want to order food in a restaurant, you need know the menu.
-import "./day9_ScientificCaculator.sol";
+import {scientificCalculator} from "./day9_ScientificCaculator.sol";
 
 contract calculator{
 
@@ -68,5 +68,6 @@ contract calculator{
         uint256 result = abi.decode(retrunAta,(uint256));
         return result;
     }
+
 
 }
